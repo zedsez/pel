@@ -22,10 +22,10 @@ title: Penn Encyclopedia of Linguistics
 email: ahamo@sas.upenn.edu
 description: >- # this means to ignore newlines until "baseurl:"
   The Penn Encyclopedia of Linguistics organizes the notes of a scholar from a department in linguistics and related disciplines to create and maintain an up-to-date reference work.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/pel"
+url: "https://alexanderhamo.org"
 twitter_username: 
-github_username:  zedsez
+github_username: zedsez
 
 # Build settings
 theme: minima
