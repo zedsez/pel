@@ -12,6 +12,6 @@ Here's an example of a TikZ tree diagram:
 
 $$
 \begin{tikzpicture}
-    % TikZ code for your tree diagram
+    \Tree [.XP X YP ]
 \end{tikzpicture}
 $$
