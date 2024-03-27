@@ -3,9 +3,7 @@ layout: default
 title: Home
 ---
 
-# Encyclopedia of Linguistics
-
-Entries:
+## Entries:
 
 <ul>
   {% for entry in site.pages %}
