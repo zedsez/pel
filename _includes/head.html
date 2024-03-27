@@ -29,12 +29,25 @@
             font-family: 'CMU Serif', serif;
             margin: 0;
             padding: 20px;
+            counter-reset: section;
         }
 
         h1 {
             color: #333;
         }
 
-        /* Add your custom styles here */
+        h2:before {
+            counter-increment: section;
+            content: counter(section) ". ";
+        }
+
+        h2 {
+            counter-reset: subsection;
+        }
+
+        h3:before {
+            counter-increment: subsection;
+            content: counter(section) "." counter(subsection) " ";
+        }
     </style>
 </head>
