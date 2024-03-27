@@ -4,27 +4,20 @@ layout: default
 
 <div id="toc">
   <h2>Table of Contents</h2>
-  {% capture toc %}
-  {% endcapture %}
-
-  {% assign lines = content | newline_to_br | split: '<br />' %}
-
-  {% for line in lines %}
-    {% if line contains '## ' or line contains '### ' %}
-      {% assign headerLevel = line | slice: 0, 3 | remove: '#' | size %}
-      {% assign headerText = line | replace: '#', '' | strip_newlines %}
-      {% capture anchor %}{{ headerText | downcase | replace: ' ', '-' }}{% endcapture %}
-
-      {% capture toc %}{{ toc }}
-        <a href="#{{ anchor }}" style="margin-left: {{ headerLevel | minus: 2 | times: 20 }}px;">{{ headerText }}</a>
-      {% endcapture %}
-
-      {% capture line %}<h{{ headerLevel }} id="{{ anchor }}">{{ headerText }}</h{{ headerLevel }}>{% endcapture %}
-    {% endif %}
-    {{ line | replace: '<br />', '' }}
-  {% endfor %}
-
-  {{ toc }}
+  <ul>
+    {% for line in content | split: '\n' %}
+      {% if line contains '## ' %}
+        {% assign headerText = line | replace: '## ', '' %}
+        {% assign headerId = headerText | downcase | replace: ' ', '-' %}
+        <li><a href="#{{ headerId }}">{{ headerText }}</a></li>
+      {% endif %}
+      {% if line contains '### ' %}
+        {% assign subheaderText = line | replace: '### ', '' %}
+        {% assign subheaderId = subheaderText | downcase | replace: ' ', '-' %}
+        <li style="margin-left: 20px;"><a href="#{{ subheaderId }}">{{ subheaderText }}</a></li>
+      {% endif %}
+    {% endfor %}
+  </ul>
 </div>
 
 {{ content }}
