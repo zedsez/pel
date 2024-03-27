@@ -2,20 +2,15 @@
 layout: default
 ---
 
+{% assign headers = content | split: '\n' | where_exp: "item", "item contains '## '" %}
+
 <div id="toc">
   <h2>Table of Contents</h2>
   <ul>
-    {% for line in content | split: '\n' %}
-      {% if line contains '## ' %}
-        {% assign headerText = line | replace: '## ', '' %}
-        {% assign headerId = headerText | downcase | replace: ' ', '-' %}
-        <li><a href="#{{ headerId }}">{{ headerText }}</a></li>
-      {% endif %}
-      {% if line contains '### ' %}
-        {% assign subheaderText = line | replace: '### ', '' %}
-        {% assign subheaderId = subheaderText | downcase | replace: ' ', '-' %}
-        <li style="margin-left: 20px;"><a href="#{{ subheaderId }}">{{ subheaderText }}</a></li>
-      {% endif %}
+    {% for header in headers %}
+      {% assign headerText = header | replace: '## ', '' %}
+      {% assign headerId = headerText | downcase | replace: ' ', '-' | replace: '/', '' %}
+      <li><a href="#{{ headerId }}">{{ headerText }}</a></li>
     {% endfor %}
   </ul>
 </div>

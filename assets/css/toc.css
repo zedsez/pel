@@ -1,0 +1,27 @@
+.toc {
+    counter-reset: section;
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.toc li {
+    counter-increment: section;
+}
+
+.toc li::before {
+    content: counters(section, ".") " ";
+}
+
+.toc li ul {
+    counter-reset: subsection;
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+.toc li ul li {
+    counter-increment: subsection;
+}
+
+.toc li ul li::before {
+    content: counters(section, ".") "." counters(subsection, ".") " ";
+}

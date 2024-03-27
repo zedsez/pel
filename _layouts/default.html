@@ -1,26 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  {% include head.html %}
+    {% include head.html %}
 </head>
+
 <body>
-  <header>
-    <h1>{{ site.title }}</h1>
-    <nav>
-      <ul>
-        <li><a href="{{ site.baseurl }}/">Home</a></li>
-        <li><a href="{{ site.baseurl }}/about">About</a></li>
-        <!-- Add more navigation items as needed -->
-      </ul>
-    </nav>
-  </header>
-
-  <main>
-    {{ content }}
-  </main>
-
-  <footer>
-    <p>&copy; {{ site.time | date: '%Y' }} {{ site.title }}. All rights reserved.</p>
-  </footer>
+    <header>
+        <h1>{{ site.title }}</h1>
+        <nav>
+            <ul>
+                <li><a href="{{ site.baseurl }}/">Home</a></li>
+                <li><a href="{{ site.baseurl }}/about">About</a></li>
+                <!-- Add more navigation items as needed -->
+            </ul>
+        </nav>
+    </header>
+    <main>
+        {{ content | toc }}
+    </main>
+    <footer>
+        <p>&copy; {{ site.time | date: '%Y' }} {{ site.title }}. All rights reserved.</p>
+    </footer>
 </body>
+
 </html>

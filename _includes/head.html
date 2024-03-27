@@ -7,6 +7,8 @@
     <link rel="stylesheet" type="text/css" href="https://tikzjax.com/v1/fonts.css">
     <script src="https://tikzjax.com/v1/tikzjax.js"></script>
 
+    <link rel="stylesheet" href="{{ site.basurl }}/assets/css/toc.css">
+
     <!-- Font face declarations -->
     <style>
         @font-face {
@@ -19,11 +21,11 @@
 
     <!-- Custom styles -->
     <style>
-        #toc {
+        /* #toc {
             border: 1px solid #ccc;
             padding: 10px;
             margin-bottom: 20px;
-        }
+        } */
 
         body {
             font-family: 'CMU Serif', serif;
@@ -32,17 +34,17 @@
             counter-reset: section;
         }
 
-        h1 {
-            color: #333;
+        :root {
+            counter-reset: section;
+        }
+
+        h2 {
+            counter-reset: subsection;
         }
 
         h2:before {
             counter-increment: section;
             content: counter(section) ". ";
-        }
-
-        h2 {
-            counter-reset: subsection;
         }
 
         h3:before {
