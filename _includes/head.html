@@ -2,45 +2,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ page.title }}</title>
-  
+
     <!-- TikzJax CSS and JS -->
     <link rel="stylesheet" type="text/css" href="https://tikzjax.com/v1/fonts.css">
     <script src="https://tikzjax.com/v1/tikzjax.js"></script>
-  
+
     <!-- Font face declarations -->
     <style>
-      @font-face {
-        font-family: 'CMU Serif';
-        src: url('{{ site.baseurl }}/assets/fonts/cmu/cmunrm.otf') format('opentype');
-        font-weight: normal;
-        font-style: normal;
-      }
-  
-      /* @font-face {
+        @font-face {
+            font-family: 'CMU Serif';
+            src: url('{{ site.baseurl }}/assets/fonts/cmu/cmunrm.otf') format('opentype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        /* @font-face {
         font-family: 'Meslo';
         src: url('{{ site.baseurl }}/assets/fonts/meslo/Meslo-Regular.otf') format('opentype');
         font-weight: normal;
         font-style: normal;
       } */
-  
-      /* @font-face {
+
+        /* @font-face {
         font-family: 'Junicode';
         src: url('{{ site.baseurl }}/assets/fonts/junicode/Junicode-Regular.otf') format('opentype');
         font-weight: normal;
         font-style: normal;
       } */
     </style>
-  
+
     <!-- Custom styles -->
     <style>
-      /* Add your custom styles here */
-      body {
-        font-family: 'CMU Serif', serif;
-        margin: 0;
-        padding: 20px;
-      }
-      h1 {
-        color: #333;
-      }
+        /* Add your custom styles here */
+        body {
+            font-family: 'CMU Serif', serif;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #333;
+        }
     </style>
-  </head>
+    <style>
+        #toc {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
