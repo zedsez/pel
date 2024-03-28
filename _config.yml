@@ -36,15 +36,15 @@ markdown: kramdown
 
 # _config.yml
 toc:
-  min_level: 2
-  max_level: 3
+  min_level: 1
+  max_level: 6
   ordered_list: true
-  # no_toc_section_class: no_toc_section
-  # list_id: toc
-  # list_class: '' # entry-toc-list-class
-  # sublist_class: '' #entry-toc-sublist-class
-  # item_class: toc-entry
-  # item_prefix: toc-
+  no_toc_section_class: no_toc_section
+  list_id: toc
+  list_class: '' # entry-toc-list-class
+  sublist_class: '' #entry-toc-sublist-class
+  item_class: toc-entry
+  item_prefix: toc-
 
 # Exclude from processing.
 # The following items will not be processed, by default.

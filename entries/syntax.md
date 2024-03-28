@@ -10,7 +10,7 @@ toc: true
 <!-- [Introduction](#introduction) -->
 <!-- [Basic concepts](#basic-concepts) -->
 
-<!-- {:toc} -->
+{:toc}
 
 ## Introduction
 
