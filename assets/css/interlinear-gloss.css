@@ -1,0 +1,27 @@
+.example {	/* Div consisting of all gloss units and free translation */
+    margin-left: 1.5rem;
+}
+
+.all-align-units {	/* Div consisting of all align-units, excluding the free translation */
+}
+
+.all-align-units .align-unit:not(:first-child){	/* Give all the non-initial align-units a left margin to ease readability */
+    margin-left: 0.25em;
+}
+
+.align-unit {	/* Div consisting of word and gloss to be vertically left-aligned */
+    display: inline-block;
+}
+
+.word {	/* Single word in the text. Keep here just in case. */
+}
+
+.gloss {	/* Gloss/translation of the single word. Keep here just in case. */
+}
+
+.gloss span {	/* Makes anything in a span tag within the gloss class small-caps, e.g. for lexical features */
+    font-variant: small-caps;
+}
+
+.free-transl {	/* English translation of text */
+}    

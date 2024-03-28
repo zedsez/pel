@@ -14,11 +14,64 @@ toc: true
 
 ## Introduction
 
+<!-- (1)
+<div class="example">
+  <div class="all-align-units">
+    <div class="align-unit">
+      <div class="word">(1)</div>
+      <div class="gloss">-</div>
+    </div>
+    <div class="align-unit">
+      <div class="word">gol-aka</div>
+      <div class="gloss">flower-DEF</div>
+    </div>
+    <div class="align-unit">
+      <div class="word">a-tʃlus-et</div>
+      <div class="gloss">IND-wither-3SG</div>
+    </div>
+  </div>
+  <div class="free-transl">'The flower withers.'</div>
+</div> -->
 
-This is the introduction to syntax.
+<!-- {% glossed_example %}
+gol-aka a-tʃlus-et
+flower-DEF IND-wither-3SG 
+'The flower withers.'
+{% endglossed_example %}
 
 
-## Basic Concepts of stuff
+{% glossed_example %}
+gol-aka a-tʃlus-et
+flower-DEF IND-wither-3SG
+'The flower withers.'
+{% endglossed_example %} -->
+
+
+<pre class="gloss-code-block">
+*zara ba saat-ek     kras=i      ʃor-d
+ zara P  hour-INDF   shirt=3SG   wash-PFV
+ Int. `Zara washed shirts in an hour.'
+</pre>
+
+<!-- <pre class="gloss-code-block">
+zara ba saat-ek kras=i ʃor-d
+zara P hour-INDF shirt=3SG wash-PFV
+Int. `Zara washed shirts in an hour.'
+</pre>
+
+
+<pre class="gloss-code-block">
+zara <strong>ba</strong> saat-ek    kras=i      ʃor-d
+zara <strong>P</strong>  hour-INDF  shirt=3SG   wash-PFV
+Int. `Zara washed ʒ@ɛæɡɔŋ shirts in an hour.'
+</pre>
+
+ -->
+
+This is the **introduction** to syntax.
+
+
+## Basic Concepts
 
 Here are some basic concepts in syntax.
 
@@ -147,6 +200,14 @@ quis, viverra ac, nunc. Praesent eget sem vel leo ultrices bibendum. Aenean fauc
 malesuada eu, pulvinar at, mollis ac, nulla. Curabitur auctor semper nulla. Donec varius orci eget risus.
 Duis nibh mi, congue eu, accumsan eleifend, sagittis quis, diam. Duis eget orci sit amet orci dignissim
 rutrum.
+
+
+<pre class="gloss-code-block">
+zara ba saat-ek     kras=i      ʃor-d
+zara P  hour-INDF   shirt=3SG   wash-PFV
+Int. `Zara washed shirts in an hour.'
+</pre>
+
 
 Nam dui ligula, fringilla a, euismod sodales, sollicitudin vel, wisi. Morbi auctor lorem non justo. Nam lacus
 libero, pretium at, lobortis vitae, ultricies et, tellus. Donec aliquet, tortor sed accumsan bibendum, erat

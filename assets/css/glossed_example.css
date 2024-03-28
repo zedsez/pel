@@ -1,0 +1,62 @@
+/* .glossed-example {
+    margin-bottom: 1em;
+}
+
+.glossed-example .gloss {
+    display: table;
+    width: 100%;
+}
+
+.glossed-example .gloss-line {
+    display: table-row;
+}
+
+.glossed-example .gloss-line span {
+    display: table-cell;
+    padding-right: 1em;
+    text-align: left;
+}
+
+.glossed-example .translation {
+    margin-top: 0.5em;
+    font-style: italic;
+} */
+
+/* ---- */
+
+/* .glossed-example {
+  display: table;
+  margin-bottom: 1em;
+}
+
+.glossed-example .gloss-line {
+  display: table-row;
+  line-height: 1.2;
+}
+
+.glossed-example .gloss-line span {
+  display: table-cell;
+  padding-right: 1em;
+}
+
+.glossed-example .translation {
+  margin-top: 0.5em;
+  font-style: italic;
+} */
+
+/* ---- */
+
+.glossed-example {
+    display: table;
+    margin-bottom: 1em;
+}
+
+.glossed-example p {
+    display: table-row;
+    line-height: 1.2;
+}
+
+.glossed-example span {
+    display: table-cell;
+    padding-right: 1em;
+}
