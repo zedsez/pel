@@ -33,19 +33,6 @@ toc: true
   <div class="free-transl">'The flower withers.'</div>
 </div> -->
 
-<!-- {% glossed_example %}
-gol-aka a-tʃlus-et
-flower-DEF IND-wither-3SG 
-'The flower withers.'
-{% endglossed_example %}
-
-
-{% glossed_example %}
-gol-aka a-tʃlus-et
-flower-DEF IND-wither-3SG
-'The flower withers.'
-{% endglossed_example %} -->
-
 
 <pre class="gloss-code-block">
 *zara ba saat-ek     kras=i      ʃor-d
