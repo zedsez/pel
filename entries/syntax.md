@@ -34,6 +34,7 @@ toc: true
 </div> -->
 
 
+
 <pre class="gloss-code-block">
 *zara ba saat-ek     kras=i      ʃor-d
  zara P  hour-INDF   shirt=3SG   wash-PFV

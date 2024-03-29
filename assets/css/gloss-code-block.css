@@ -1,7 +1,8 @@
 .gloss-code-block {
-    font-family: monospace;
+    font-family: 'Noto Sans Mono';
     white-space: pre;
     display: flex;
+    font-size: normal;
 }
 
 /* .gloss-code-block strong {
