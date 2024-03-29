@@ -15,17 +15,17 @@
   
 #   Liquid::Template.register_tag('glossed_example', Jekyll::GlossedExampleTag)
 
-module Jekyll
-    class GlossedExampleTag < Liquid::Block
-      def render(context)
-        lines = super.split("\n").map(&:strip)
-        example = lines.map.with_index do |line, index|
-          "<p>#{line.split.map { |word| "<span>#{word}</span>" }.join(' ')}</p>"
-        end.join("\n")
+# module Jekyll
+#     class GlossedExampleTag < Liquid::Block
+#       def render(context)
+#         lines = super.split("\n").map(&:strip)
+#         example = lines.map.with_index do |line, index|
+#           "<p>#{line.split.map { |word| "<span>#{word}</span>" }.join(' ')}</p>"
+#         end.join("\n")
   
-        "<div class=\"glossed-example\">\n#{example}\n</div>"
-      end
-    end
-  end
+#         "<div class=\"glossed-example\">\n#{example}\n</div>"
+#       end
+#     end
+#   end
   
-  Liquid::Template.register_tag('glossed_example', Jekyll::GlossedExampleTag)
+#   Liquid::Template.register_tag('glossed_example', Jekyll::GlossedExampleTag)
