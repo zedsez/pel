@@ -3,9 +3,18 @@
 
 <head>
     {% include head.html %}
+
+    <script>
+        var siteBaseUrl = "{{ site.baseurl }}";
+    </script>
+
 </head>
 
 <body>
+
+
+    <!-- Rest of your body content goes here -->
+
     <header>
         <h1>{{ site.title }}</h1>
         <nav>
@@ -15,9 +24,16 @@
                 <!-- Add more navigation items as needed -->
             </ul>
         </nav>
+        <!-- Search input and results display -->
+        <div id="search-container">
+            <input type="text" id="search-input" placeholder="Search...">
+            <div id="search-results"></div>
+        </div>
+
     </header>
     <main>
         <script src="{{ site.baseurl }}/scripts/gloss-code-block.js"></script>
+        <!-- <script src="{{ '/scripts/search.js' | relative_url }}"></script> -->
 
         {{ content | toc }}
     </main>

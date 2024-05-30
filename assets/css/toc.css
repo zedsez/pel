@@ -1,3 +1,33 @@
+body {
+    font-family: 'Minion 3', serif;
+    /* margin: 15%; */
+    margin-left: 20px;
+    margin-right: 20px;
+    /* padding: 20px; */
+    padding-left: 5%;
+    padding-right: 5%;
+    counter-reset: section;
+}
+
+:root {
+    counter-reset: section;
+}
+
+h2 {
+    counter-reset: subsection;
+}
+
+h2:before {
+    counter-increment: section;
+    content: counter(section) ". ";
+}
+
+h3:before {
+    counter-increment: subsection;
+    content: counter(section) "." counter(subsection) " ";
+}
+
+
 .toc {
     counter-reset: section;
     list-style-type: none;
@@ -24,4 +54,92 @@
 
 .toc li ul li::before {
     content: counters(section, ".") "." counters(subsection, ".") " ";
+}
+
+div.container,
+div.small-container {
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+div.container {
+    max-width: 940px;
+}
+
+div.small-container {
+    max-width: 700px;
+}
+
+textarea,
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    display: block;
+    box-sizing: padding-box;
+}
+
+textarea {
+    height: 250px;
+    line-height: 1.5em;
+    border: 1px solid #ccc;
+    resize: none;
+}
+
+label {
+    margin: 30px 0 10px 0;
+    display: block;
+}
+
+input[type="submit"] {
+    margin: 30px 0 0 0;
+    font-size: 20px;
+}
+
+.search {
+    width: 50%;
+    margin: 0 auto;
+    padding: 100px 0;
+}
+
+#search-container {
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+#search-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#search-results {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+#search-results li {
+    margin-bottom: 15px;
+}
+
+#search-results a {
+    display: block;
+    color: #333;
+    text-decoration: none;
+}
+
+#search-results a:hover {
+    text-decoration: underline;
+}
+
+#search-results h4 {
+    margin: 0 0 5px;
+}
+
+#search-results p {
+    margin: 0;
 }

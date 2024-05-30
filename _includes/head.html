@@ -6,82 +6,30 @@
     <!-- TikzJax CSS and JS -->
     <link rel="stylesheet" type="text/css" href="https://tikzjax.com/v1/fonts.css">
     <script src="https://tikzjax.com/v1/tikzjax.js"></script>
+    <script src="https://unpkg.com/minisearch/dist/umd/MiniSearch.min.js"></script>
+    <script>console.log('MiniSearch loaded:', typeof MiniSearch !== 'undefined');</script>
 
-    <link rel="stylesheet" href="{{ site.basurl }}/assets/css/toc.css">
-    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/interlinear-gloss.css">
+    <script src="{{ '/scripts/search.js' | relative_url }}"></script>
+
+    <!-- <script src="{{ site.basurl }}/scripts/search.js"></script> -->
+
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/toc.css">
     <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/gloss-code-block.css">
-    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/glossed_example.css">
 
     <!-- external fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@400;700&display=swap" rel="stylesheet">
 
     <!-- Font face declarations -->
+    
     <style>
         @font-face {
-            font-family: 'CMU Serif';
-            src: url('{{ site.baseurl }}/assets/fonts/cmu/cmunrm.otf') format('opentype');
+            font-family: 'Minion 3';
+            src: url('{{ site.baseurl }}/assets/fonts/minion/Minion3-Regular.otf') format('opentype');
             font-weight: normal;
             font-style: normal;
         }
     </style>
 
     <!-- Custom styles -->
-    <style>
-        /* #toc {
-            border: 1px solid #ccc;
-            padding: 10px;
-            margin-bottom: 20px;
-        } */
-
-        body {
-            font-family: 'CMU Serif', serif;
-            /* margin: 15%; */
-            margin-left: 15%;
-            margin-right: 15%;
-            /* padding: 20px; */
-            padding-left: 5%;
-            padding-right: 5%;
-            counter-reset: section;
-        }
-
-        :root {
-            counter-reset: section;
-        }
-
-        h2 {
-            counter-reset: subsection;
-        }
-
-        h2:before {
-            counter-increment: section;
-            content: counter(section) ". ";
-        }
-
-        h3:before {
-            counter-increment: subsection;
-            content: counter(section) "." counter(subsection) " ";
-        }
-    </style>
-
-    <!-- <style>
-        body {
-            font-family: 'CMU Serif', serif;
-            margin: 0;
-            padding: 20px;
-            counter-reset: example;
-        }
-
-        pre.gloss-code-block {
-            counter-increment: example;
-            position: relative;
-            padding-left: 3.5em;
-        }
-
-        pre.gloss-code-block::before {
-            content: "(" counter(example) ")";
-            position: absolute;
-            left: 0;
-        }
-    </style> -->
 
 </head>
