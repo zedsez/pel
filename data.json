@@ -1,0 +1,10 @@
+---
+---
+{%- assign pages = site.pages | where_exp: "p", "p.layout != nil" -%}
+
+{
+  {%- for p in pages %}
+    {{ p.url | jsonify }}: {{ p.content | markdownify | strip_html | jsonify }}
+    {%- unless forloop.last %},{% endunless -%}
+  {% endfor %}
+}

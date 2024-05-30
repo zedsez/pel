@@ -1,0 +1,39 @@
+---
+layout: default
+---
+
+<h1>Search Results</h1>
+
+<ul id="search-results"></ul>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const searchQuery = new URLSearchParams(window.location.search).get('q');
+        const resultsContainer = document.getElementById('search-results');
+
+        fetch(siteBaseUrl + '/dentries.json')
+            .then(response => response.json())
+            .then(data => {
+                const results = data.filter(page => {
+                    const title = page.title ? page.title.toLowerCase() : '';
+                    const content = page.content ? page.content.toLowerCase() : '';
+                    return title.includes(searchQuery) || content.includes(searchQuery);
+                });
+
+                // Display search results
+                if (results.length > 0) {
+                    const resultsList = document.createElement('ul');
+                    results.forEach(result => {
+                        const listItem = document.createElement('ul');
+                        listItem.innerHTML = `
+                <h2><a href="${siteBaseUrl}${result.url}">${result.title}</a></h2>
+                <p>${result.excerpt}</p>
+              `;
+                        resultsList.appendChild(listItem);
+                    });
+                    resultsContainer.appendChild(resultsList);
+                } else {
+                    resultsContainer.innerHTML = '<p>No results found.</p>';
+                }
+            });
+    });
+</script>
