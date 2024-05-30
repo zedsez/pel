@@ -21,6 +21,11 @@ end
 
 gem 'jekyll-toc'
 
+gem 'jekyll-scholar'
+
+
+# gem 'jekyll-json'
+
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem
 # and associated library.
 platforms :mingw, :x64_mingw, :mswin, :jruby do

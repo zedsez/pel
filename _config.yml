@@ -29,10 +29,34 @@ github_username: zedsez
 
 # Build settings
 theme: minima
+
+collections:
+  entries:
+    output: true
+
 plugins:
   - jekyll-feed
   - jekyll-toc
+  - jekyll-scholar
+  # - entries_json
+  # - jekyll-json
 markdown: kramdown
+
+
+scholar:
+  style: apa
+  locale: en
+  source: ./_data
+  bibliography: references.bib
+  order: ascending
+
+# entries_json_path: entries.json
+
+# json:
+#   collections:
+#     entries: ['title', 'url', 'content']
+#       output: true
+
 
 # _config.yml
 toc:
@@ -45,6 +69,9 @@ toc:
   sublist_class: '' #entry-toc-sublist-class
   item_class: toc-entry
   item_prefix: toc-
+
+
+
 
 # Exclude from processing.
 # The following items will not be processed, by default.
