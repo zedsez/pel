@@ -1,10 +1,26 @@
----
----
-{%- assign pages = site.pages | where_exp: "p", "p.layout != nil" -%}
-
 {
-  {%- for p in pages %}
-    {{ p.url | jsonify }}: {{ p.content | markdownify | strip_html | jsonify }}
-    {%- unless forloop.last %},{% endunless -%}
-  {% endfor %}
+    "/404.html": "\n\n\n  404\n\n  Page not found :(\n  The requested page could not be found.\n\n",
+    "/entries/abcdx.html": "Index\n\nincorporation\n\npseudo-incorporation\n\nexcorporation\n\nScope Economy (Fox, 2000)\n\nAccord Maximization Principle (Schütze, 1997)\n\n",
+    "/about/": "This is work in progress\n",
+    "/entries/equal-embedding.html": "Equal Embedding\n\nIntroduction\n\n{% cite elliotmurphy2020CopyInvisibilityNon %}\n\nReferences\n\n{% bibliography –cited %}\n",
+    "/entries/extension-condition.html": "Extension Condition\n\nIntroduction\n\n{% cite chomsky1995MinimalistPrograma %}\n\nReferences\n\n{% bibliography –cited %}\n",
+    "/entries/feature-economy.html": "Feature Economy\n\nIntroduction\n\n{% cite vangelderen2011LinguisticCycle %}\n\nReferences\n\n{% bibliography –cited %}\n",
+    "/entries/full-interpretation.html": "Full Interpretation\n\nIntroduction\n\n{% cite freidin2011RootsMinimalism %}, {% cite lohndal2016ThirdFactorExplanationsUniversal %}\n\nReferences\n\n{% bibliography –cited %}\n",
+    "/entries/global-economy-condition.html": "Global Economy Condition\n\nIntroduction\n\n{% cite sternefeld1996ComparingReferenceSets %}\n\nReferences\n\n{% bibliography –cited %}\n",
+    "/entries/inclusiveness-condition.html": "Inclusiveness Condition\n\nIntroduction\n\n{% cite chomsky1995MinimalistPrograma %}\n\nReferences\n\n{% bibliography –cited %}\n",
+    "/": "Entries:\n\n\n  {% for entry in site.pages %}\n    {% if entry.dir == '/entries/' %}\n      {{ entry.title }}\n    {% endif %}\n  {% endfor %}\n\n",
+    "/entries/input-generaliztion.html": "Input Generalization\n\nIntroduction\n\n{% cite holmberg2014ParametersThreeFactors %}\n\nReferences\n\n{% bibliography –cited %}\n",
+    "/entries/last-resort.html": "Last Resort\n\nIntroduction\n\n{% cite chomsky1995MinimalistPrograma %}\n\nReferences\n\n{% bibliography –cited %}\n",
+    "/entries/maximize-minimal-means.html": "Maximize Minimal Means\n\nIntroduction\n\n{% cite biberauer2019FactorsCapEnfocament %}\n\nReferences\n\n{% bibliography –cited %}\n",
+    "/entries/minimal-link-condition.html": "Minimal Link Condition\n\nIntroduction\n\n{% cite chomsky1995MinimalistPrograma %}\n\nReferences\n\n{% bibliography –cited %}\n",
+    "/entries/minimal-yield.html": "Minimal Yield\n\nIntroduction\n\n{% cite chomsky2021MinimalismWhereAre %}\n\nReferences\n\n{% bibliography –cited %}\n",
+    "/entries/morphology.html": "Morphology\n\nWhat is a morpheme?\n",
+    "/entries/no-tampering-condition.html": "No Tampering Condition\n\nIntroduction\n\nThis page will discuss the No Tampering Condition (NTC)\n\n{% cite chomsky2008Phases %}\n\nReferences\n\n{% bibliography –cited %}\n",
+    "/entries/phase-impenetrability-condition.html": "Phase Impenetrability Condition\n\nIntroduction\n\n{% cite chomsky2004ExplanatoryAdequacya %}\n\nReferences\n\n{% bibliography –cited %}\n",
+    "/entries/precedence-resolution-principle.html": "Precedence Resolution Principle\n\nIntroduction\n\n{% cite epstein1998DerivationalApproachSyntactica %}\n\nReferences\n\n{% bibliography –cited %}\n",
+    "/entries/relativized-minimality.html": "Relativized Minimality\n\nIntroduction\n\n{% cite  rizzi1990RelativizedMinimality %}, {% cite rizzi2001RelativizedMinimalityEffectsa %}\n\nReferences\n\n{% bibliography –cited %}\n",
+    "/entries/resource-restriction.html": "Resource Restriction\n\nIntroduction\n\n{% cite chomsky2019GenerativeGrammarFaculty %}\n\nReferences\n\n{% bibliography –cited %}\n",
+    "/search-results.html": "Search Results\n\n\n\n\n",
+    "/entries/semantics.html": "Semantics\n\nSomething something lambda something…\n",
+    "/entries/syntax.html": "Syntax\n\n\n\n\nIntroduction\n\n\n\n\n*zara ba saat-ek     kras=i      ʃor-d\n zara P  hour-INDF   shirt=3SG   wash-PFV\n Int. `Zara washed shirts in an hour.'\n\n\n\n\nThis is the introduction to syntax.\n\nBasic Concepts\n\nHere are some basic concepts in syntax.\n\nConstituent Structure\n\nExplanation of constituent structure.\n\nGrammatical Categories\n\nExplanation of grammatical categories.\n\nAdvanced Topics\n\nLorem ipsum dolor sit amet, consectetuer adipiscing elit. Ut purus elit, vestibulum ut, placerat ac, adipiscing\nvitae, felis. Curabitur dictum gravida mauris. Nam arcu libero, nonummy eget, consectetuer id, vulputate a,\nmagna. Donec vehicula augue eu neque. Pellentesque habitant morbi tristique senectus et netus et malesuada\nfames ac turpis egestas. Mauris ut leo. Cras viverra metus rhoncus sem. Nulla et lectus vestibulum urna\nfringilla ultrices. Phasellus eu tellus sit amet tortor gravida placerat. Integer sapien est, iaculis in, pretium\nquis, viverra ac, nunc. Praesent eget sem vel leo ultrices bibendum. Aenean faucibus. Morbi dolor nulla,\nmalesuada eu, pulvinar at, mollis ac, nulla. Curabitur auctor semper nulla. Donec varius orci eget risus.\nDuis nibh mi, congue eu, accumsan eleifend, sagittis quis, diam. Duis eget orci sit amet orci dignissim\nrutrum.\n\n\nzara ba saat-ek     kras=i      ʃor-d\nzara P  hour-INDF   shirt=3SG   wash-PFV\nInt. `Zara washed shirts in an hour.'\n\n\nNam dui ligula, fringilla a, euismod sodales, sollicitudin vel, wisi. Morbi auctor lorem non justo. Nam lacus\nlibero, pretium at, lobortis vitae, ultricies et, tellus. Donec aliquet, tortor sed accumsan bibendum, erat\nligula aliquet magna, vitae ornare odio metus a mi. Morbi ac orci et nisl hendrerit mollis. Suspendisse ut\nmassa. Cras nec ante. Pellentesque a nulla. Cum sociis natoque penatibus et magnis dis parturient montes,\nnascetur ridiculus mus. Aliquam tincidunt urna. Nulla ullamcorper vestibulum turpis. Pellentesque cursus\nluctus mauris.\n\nBut you should probably start by reading Introduction\n\nOr even with Basic concepts\n\nTransformations\n\nExplanation of transformations.\n\nConstraints\n\nExplanation of constraints.\n"
 }
